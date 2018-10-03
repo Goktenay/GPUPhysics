@@ -220,14 +220,15 @@ MonoBehaviour:
   physicsShader: {fileID: 7200000, guid: b4acfac7e15e26f438cb6512f4e60453, type: 3}
   alphaObject: {fileID: 1029376701}
   ballPrefab: {fileID: 1580889192373028, guid: 85cb81bbf812fc1498659f079820a36c, type: 2}
-  ballCount: 100
-  velocityRange: 0.1
-  positionRange: 0.1
+  ballCount: 2000
+  velocityRange: 0.01
+  positionRange: 10
   gravity: -0.01
-  borderForce: 0.1
-  xRange: {x: 10, y: 10}
-  yRange: {x: 10, y: 10}
-  zRange: {x: 10, y: 10}
+  borderForce: 0.01
+  frictionRate: 0.005
+  xRange: {x: -10, y: 10}
+  yRange: {x: -10, y: 10}
+  zRange: {x: -10, y: 10}
 --- !u!4 &104811500
 Transform:
   m_ObjectHideFlags: 0
@@ -316,7 +317,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4950778561345404, guid: 85cb81bbf812fc1498659f079820a36c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 130.2
       objectReference: {fileID: 0}
     - target: {fileID: 4950778561345404, guid: 85cb81bbf812fc1498659f079820a36c, type: 2}
       propertyPath: m_LocalPosition.y

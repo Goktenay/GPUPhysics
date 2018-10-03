@@ -2,109 +2,360 @@ Base path: C:/Program Files/Unity/Editor/Data
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
 Cmd: preprocessCompute
-  insize=1857 outsize=1856 ok=1
+  insize=2027 outsize=2026 ok=1
+Cmd: preprocessCompute
+  insize=2050 outsize=2049 ok=1
 Cmd: compileComputeKernel
-  error: 1 plat 4 at PhysicsCompute.compute(68): 'calculateForces': implicit truncation of vector type
-  api=4 insize=1856 outsize=2229 ok=1
-Cmd: initializeCompiler
-Cmd: compileSnippet
-  api=4 type=0 insize=1278 outsize=1414 kw=UNITY_PASS_SHADOWCASTER SHADOWS_DEPTH pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
-Cmd: compileSnippet
-  api=4 type=1 insize=1278 outsize=218 kw=UNITY_PASS_SHADOWCASTER SHADOWS_DEPTH pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
-Cmd: compileSnippet
-  api=4 type=0 insize=11846 outsize=1258 kw=SHADOWS_SPLIT_SPHERES pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
-Cmd: compileSnippet
-  api=4 type=1 insize=11846 outsize=5706 kw=SHADOWS_SPLIT_SPHERES pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
-Cmd: compileSnippet
-  api=4 type=0 insize=1564 outsize=2002 kw=UNITY_PASS_FORWARDBASE DIRECTIONAL SHADOWS_SCREEN LIGHTPROBE_SH pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
-Cmd: compileSnippet
-  api=4 type=1 insize=1564 outsize=7190 kw=UNITY_PASS_FORWARDBASE DIRECTIONAL SHADOWS_SCREEN LIGHTPROBE_SH pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
-Cmd: compileSnippet
-  api=4 type=0 insize=1341 outsize=790 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
-Cmd: compileSnippet
-  api=4 type=1 insize=1341 outsize=402 kw= pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
-Cmd: compileSnippet
-  api=4 type=0 insize=1564 outsize=1894 kw=UNITY_PASS_FORWARDBASE DIRECTIONAL LIGHTPROBE_SH pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
-Cmd: compileSnippet
-  api=4 type=1 insize=1564 outsize=6814 kw=UNITY_PASS_FORWARDBASE DIRECTIONAL LIGHTPROBE_SH pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
-Cmd: compileSnippet
-  api=4 type=0 insize=1426 outsize=1690 kw=UNITY_PASS_FORWARDADD DIRECTIONAL pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
-Cmd: compileSnippet
-  api=4 type=1 insize=1426 outsize=3378 kw=UNITY_PASS_FORWARDADD DIRECTIONAL pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
-Cmd: compileSnippet
-  api=4 type=0 insize=1564 outsize=1638 kw=UNITY_PASS_FORWARDBASE DIRECTIONAL pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
-Cmd: compileSnippet
-  api=4 type=1 insize=1564 outsize=5590 kw=UNITY_PASS_FORWARDBASE DIRECTIONAL pd=UNITY_ENABLE_REFLECTION_BUFFERS UNITY_USE_DITHER_MASK_FOR_ALPHABLENDED_SHADOWS UNITY_PBS_USE_BRDF1 UNITY_SPECCUBE_BOX_PROJECTION UNITY_SPECCUBE_BLENDING UNITY_ENABLE_DETAIL_NORMALMAP SHADER_API_DESKTOP UNITY_COLORSPACE_GAMMA UNITY_LIGHT_PROBE_PROXY_VOLUME UNITY_LIGHTMAP_FULL_HDR ok=1
-Cmd: initializeCompiler
-Cmd: disassembleShader
-  api=4 insize=1660 outsize=2938 ok=1
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
-Cmd: initializeCompiler
+  error: 1 plat 4 at PhysicsCompute.compute(75): 'calculateForces': implicit truncation of vector type
+  api=4 insize=2049 outsize=2285 ok=1
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: preprocessCompute
-  insize=1881 outsize=1880 ok=1
-Cmd: initializeCompiler
-Cmd: preprocessCompute
-  insize=1864 outsize=1863 ok=1
-Cmd: initializeCompiler
-Cmd: preprocessCompute
-  insize=1857 outsize=1856 ok=1
-Cmd: initializeCompiler
-Cmd: preprocessCompute
-  insize=1866 outsize=1865 ok=1
+  insize=2053 outsize=2052 ok=1
 Cmd: compileComputeKernel
-  error: 2 plat 4 at PhysicsCompute.compute(43): syntax error: unexpected token '}'
-  error: 2 plat 4 at PhysicsCompute.compute(48): syntax error: unexpected token 'else'
-  error: 2 plat 4 at PhysicsCompute.compute(65): syntax error: unexpected token '('
-  error: 2 plat 4 at PhysicsCompute.compute(78): syntax error: unexpected end of file
-  api=4 insize=1865 outsize=0 ok=0
-Cmd: preprocessCompute
-  insize=1861 outsize=1860 ok=1
-Cmd: compileComputeKernel
-  error: 1 plat 4 at PhysicsCompute.compute(68): 'calculateForces': implicit truncation of vector type
-  api=4 insize=1860 outsize=2193 ok=1
-Cmd: preprocessCompute
-  insize=1867 outsize=1866 ok=1
-Cmd: compileComputeKernel
-  error: 1 plat 4 at PhysicsCompute.compute(68): 'calculateForces': implicit truncation of vector type
-  api=4 insize=1866 outsize=2213 ok=1
+  error: 1 plat 4 at PhysicsCompute.compute(75): 'calculateForces': implicit truncation of vector type
+  api=4 insize=2052 outsize=2373 ok=1
 Cmd: initializeCompiler
-Cmd: preprocessCompute
-  insize=1847 outsize=1846 ok=1
-Cmd: compileComputeKernel
-  error: 1 plat 4 at PhysicsCompute.compute(68): 'calculateForces': implicit truncation of vector type
-  api=4 insize=1846 outsize=2205 ok=1
 Cmd: initializeCompiler
-Cmd: preprocessCompute
-  insize=1865 outsize=1864 ok=1
-Cmd: compileComputeKernel
-  error: 2 plat 4 at PhysicsCompute.compute(43): syntax error: unexpected token '}'
-  error: 2 plat 4 at PhysicsCompute.compute(48): syntax error: unexpected token 'else'
-  error: 2 plat 4 at PhysicsCompute.compute(65): syntax error: unexpected token '('
-  error: 2 plat 4 at PhysicsCompute.compute(78): syntax error: unexpected end of file
-  api=4 insize=1864 outsize=0 ok=0
-Cmd: preprocessCompute
-  insize=1868 outsize=1867 ok=1
-Cmd: compileComputeKernel
-  error: 1 plat 4 at PhysicsCompute.compute(68): 'calculateForces': implicit truncation of vector type
-  api=4 insize=1867 outsize=2221 ok=1
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: preprocessCompute
-  insize=1873 outsize=1872 ok=1
+  insize=2087 outsize=2086 ok=1
+Cmd: initializeCompiler
+Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: preprocessCompute
-  insize=1879 outsize=1878 ok=1
+  insize=2095 outsize=2094 ok=1
 Cmd: compileComputeKernel
-  error: 1 plat 4 at PhysicsCompute.compute(68): 'calculateForces': implicit truncation of vector type
-  api=4 insize=1878 outsize=2221 ok=1
+  error: 1 plat 4 at PhysicsCompute.compute(73): 'calculateForces': implicit truncation of vector type
+  api=4 insize=2094 outsize=2421 ok=1
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=2086 outsize=2085 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at PhysicsCompute.compute(75): 'calculateForces': implicit truncation of vector type
+  error: 2 plat 4 at PhysicsCompute.compute(85): syntax error: unexpected token '}'
+  api=4 insize=2085 outsize=0 ok=0
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=2062 outsize=2061 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at PhysicsCompute.compute(75): 'calculateForces': implicit truncation of vector type
+  api=4 insize=2061 outsize=2373 ok=1
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=1996 outsize=1995 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at PhysicsCompute.compute(70): 'calculateForces': implicit truncation of vector type
+  api=4 insize=1995 outsize=2453 ok=1
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=2020 outsize=2019 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at PhysicsCompute.compute(70): 'calculateForces': implicit truncation of vector type
+  api=4 insize=2019 outsize=2453 ok=1
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=2021 outsize=2020 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at PhysicsCompute.compute(70): 'calculateForces': implicit truncation of vector type
+  api=4 insize=2020 outsize=2453 ok=1
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=2020 outsize=2019 ok=1
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=2095 outsize=2094 ok=1
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=2116 outsize=2115 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at PhysicsCompute.compute(70): 'calculateForces': implicit truncation of vector type
+  api=4 insize=2115 outsize=2505 ok=1
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=2110 outsize=2109 ok=1
+Cmd: compileComputeKernel
+  error: 2 plat 4 at PhysicsCompute.compute(43): undeclared identifier 'norm'
+  api=4 insize=2109 outsize=0 ok=0
+Cmd: preprocessCompute
+  insize=2115 outsize=2114 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at PhysicsCompute.compute(70): 'calculateForces': implicit truncation of vector type
+  api=4 insize=2114 outsize=2533 ok=1
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=2118 outsize=2117 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at PhysicsCompute.compute(70): 'calculateForces': implicit truncation of vector type
+  api=4 insize=2117 outsize=2573 ok=1
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=2157 outsize=2156 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at PhysicsCompute.compute(70): 'calculateForces': implicit truncation of vector type
+  error: 2 plat 4 at PhysicsCompute.compute(73): 'length': identifier represents a variable, not a function
+  api=4 insize=2156 outsize=0 ok=0
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=2225 outsize=2224 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at PhysicsCompute.compute(70): 'calculateForces': implicit truncation of vector type
+  api=4 insize=2224 outsize=2949 ok=1
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=2219 outsize=2218 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at PhysicsCompute.compute(70): 'calculateForces': implicit truncation of vector type
+  api=4 insize=2218 outsize=2849 ok=1
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=2205 outsize=2204 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at PhysicsCompute.compute(70): 'calculateForces': implicit truncation of vector type
+  api=4 insize=2204 outsize=2929 ok=1
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=2205 outsize=2204 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at PhysicsCompute.compute(70): 'calculateForces': implicit truncation of vector type
+  api=4 insize=2204 outsize=2929 ok=1
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=2202 outsize=2201 ok=1
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=2204 outsize=2203 ok=1
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=2123 outsize=2122 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at PhysicsCompute.compute(70): 'calculateForces': implicit truncation of vector type
+  api=4 insize=2122 outsize=2573 ok=1
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=2219 outsize=2218 ok=1
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=2216 outsize=2215 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at PhysicsCompute.compute(70): 'calculateForces': implicit truncation of vector type
+  api=4 insize=2215 outsize=2653 ok=1
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=2220 outsize=2219 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at PhysicsCompute.compute(70): 'calculateForces': implicit truncation of vector type
+  api=4 insize=2219 outsize=2929 ok=1
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=2220 outsize=2219 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at PhysicsCompute.compute(70): 'calculateForces': implicit truncation of vector type
+  api=4 insize=2219 outsize=2929 ok=1
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=2219 outsize=2218 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at PhysicsCompute.compute(70): 'calculateForces': implicit truncation of vector type
+  api=4 insize=2218 outsize=2929 ok=1
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=2218 outsize=2217 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at PhysicsCompute.compute(70): 'calculateForces': implicit truncation of vector type
+  api=4 insize=2217 outsize=2929 ok=1
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=2218 outsize=2217 ok=1
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=2204 outsize=2203 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at PhysicsCompute.compute(70): 'calculateForces': implicit truncation of vector type
+  api=4 insize=2203 outsize=2929 ok=1
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=2234 outsize=2233 ok=1
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=2267 outsize=2266 ok=1
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=2266 outsize=2265 ok=1
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=2267 outsize=2266 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at PhysicsCompute.compute(72): 'calculateForces': implicit truncation of vector type
+  api=4 insize=2266 outsize=2993 ok=1
+Cmd: preprocessCompute
+  insize=2267 outsize=2266 ok=1
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=2268 outsize=2267 ok=1
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=2268 outsize=2267 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at PhysicsCompute.compute(72): 'calculateForces': implicit truncation of vector type
+  api=4 insize=2267 outsize=2993 ok=1
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=2267 outsize=2266 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at PhysicsCompute.compute(72): 'calculateForces': implicit truncation of vector type
+  api=4 insize=2266 outsize=2993 ok=1
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=2269 outsize=2268 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at PhysicsCompute.compute(72): 'calculateForces': implicit truncation of vector type
+  api=4 insize=2268 outsize=2993 ok=1
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=2269 outsize=2268 ok=1
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=2269 outsize=2268 ok=1
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=2264 outsize=2263 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at PhysicsCompute.compute(74): 'calculateForces': implicit truncation of vector type
+  api=4 insize=2263 outsize=2929 ok=1
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=2260 outsize=2259 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at PhysicsCompute.compute(74): 'calculateForces': implicit truncation of vector type
+  api=4 insize=2259 outsize=2993 ok=1
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=2261 outsize=2260 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at PhysicsCompute.compute(74): 'calculateForces': implicit truncation of vector type
+  api=4 insize=2260 outsize=2993 ok=1
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=2261 outsize=2260 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at PhysicsCompute.compute(74): 'calculateForces': implicit truncation of vector type
+  api=4 insize=2260 outsize=2993 ok=1
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=2260 outsize=2259 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at PhysicsCompute.compute(74): 'calculateForces': implicit truncation of vector type
+  api=4 insize=2259 outsize=2993 ok=1
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=2279 outsize=2278 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at PhysicsCompute.compute(74): 'calculateForces': implicit truncation of vector type
+  api=4 insize=2278 outsize=2913 ok=1
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=2278 outsize=2277 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at PhysicsCompute.compute(74): 'calculateForces': implicit truncation of vector type
+  api=4 insize=2277 outsize=2913 ok=1
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=2270 outsize=2269 ok=1
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=2272 outsize=2271 ok=1
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=2271 outsize=2270 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at PhysicsCompute.compute(74): 'calculateForces': implicit truncation of vector type
+  api=4 insize=2270 outsize=2885 ok=1
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=2271 outsize=2270 ok=1
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=2273 outsize=2272 ok=1
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=2268 outsize=2267 ok=1
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=2274 outsize=2273 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at PhysicsCompute.compute(74): 'calculateForces': implicit truncation of vector type
+  api=4 insize=2273 outsize=2885 ok=1
+Cmd: initializeCompiler
+Cmd: preprocessCompute
+  insize=2278 outsize=2277 ok=1
+Cmd: compileComputeKernel
+  error: 1 plat 4 at PhysicsCompute.compute(74): 'calculateForces': implicit truncation of vector type
+  api=4 insize=2277 outsize=2637 ok=1
+Cmd: initializeCompiler
+Cmd: initializeCompiler
 Cmd: initializeCompiler
 Cmd: initializeCompiler

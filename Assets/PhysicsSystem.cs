@@ -14,6 +14,8 @@ public class PhysicsSystem : MonoBehaviour {
 	public float positionRange; // Position range that we will randomly instantiate balls with
 	public float gravity;
 	public float borderForce;
+	public float frictionRate;
+
 	public Vector2 xRange;
 	public Vector2 yRange;
 	public Vector2 zRange;
@@ -103,7 +105,7 @@ public class PhysicsSystem : MonoBehaviour {
 
 	void UpdateShaderValues()
 	{
-		
+		physicsShader.SetFloat( "friction", frictionRate );
 		physicsShader.SetFloat( "borderForceMagnitude", borderForce );
 		physicsShader.SetFloat( "gravity", gravity );  // Strangely primitive data types doesnt need kernel. I don't know why.
 		physicsShader.SetVector( "alphaBall", alphaObject.position );
@@ -116,7 +118,7 @@ public class PhysicsSystem : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
-
+		UpdateShaderValues();
 		RunComputeShader();
 
 
@@ -125,16 +127,15 @@ public class PhysicsSystem : MonoBehaviour {
 	void RunComputeShader()
 	{
 		physicsShader.Dispatch( kernel, ballCount, 1, 1 );
+		ballBuffers.resultBuffer.GetData( ballResult );
+		
 
 		for( int i = 0 ; i < ballCount ; i++ )
 		{
 			ballObjects[ i ].transform.position = ballResult[ i ];
 		}
-
 		ballBuffers.positionBuffer.SetData( ballResult );
 		physicsShader.SetBuffer( kernel, "positionBuff", ballBuffers.positionBuffer );
-
-		ballBuffers.resultBuffer.GetData( ballResult );
 
 		
 	}

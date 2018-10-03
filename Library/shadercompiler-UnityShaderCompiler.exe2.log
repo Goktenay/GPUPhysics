@@ -1,0 +1,17 @@
+Base path: C:/Program Files/Unity/Editor/Data
+Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  error: 2 plat 4 at PhysicsCompute.compute(43): syntax error: unexpected token '}'
+  error: 2 plat 4 at PhysicsCompute.compute(48): syntax error: unexpected token 'else'
+  error: 2 plat 4 at PhysicsCompute.compute(65): syntax error: unexpected token '('
+  error: 2 plat 4 at PhysicsCompute.compute(78): syntax error: unexpected end of file
+  api=4 insize=1863 outsize=0 ok=0
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler

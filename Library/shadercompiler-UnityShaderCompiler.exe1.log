@@ -1,5 +1,17 @@
 Base path: C:/Program Files/Unity/Editor/Data
 Cmd: initializeCompiler
 Cmd: compileComputeKernel
-  error: 2 plat 4 at PhysicsCompute.compute(36): undeclared identifier 'positinBuff'
-  api=4 insize=1855 outsize=0 ok=0
+  error: 2 plat 4 at PhysicsCompute.compute(38): syntax error: unexpected token ';'
+  error: 2 plat 4 at PhysicsCompute.compute(41): syntax error: unexpected token '{'
+  error: 2 plat 4 at PhysicsCompute.compute(46): syntax error: unexpected token 'if'
+  api=4 insize=1880 outsize=0 ok=0
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler
+Cmd: initializeCompiler

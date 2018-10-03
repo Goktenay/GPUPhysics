@@ -33,13 +33,13 @@ float3 calculateForces(uint id)
 
 	for (int i = 0; i < length; i++)
 	{
-		minusPositions = positionBuff[id.x] - positinBuff[i];
+		minusPositions = positionBuff[id.x] - positionBuff[i];
 		dist = dot(minusPositions, minusPositions);
-		maxDist = massBuff[id.x] * massBuff[id.x] + massBuff[i] * massBuff[i];
+		maxDist = (massBuff[id.x] * massBuff[id.x] + massBuff[i] * massBuff[i]) / 4;
 
 			if (dist < maxDist && dist != 0)
 			{
-				allForces += minusPositions * (dist/maxDist);
+				allForces += minusPositions / dist*dist; // * (dist/maxDist);
 			}
 	}
 

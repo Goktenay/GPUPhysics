@@ -1,0 +1,77 @@
+﻿// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel CSMain
+
+// Create a RenderTexture with enableRandomWrite flag and set it
+// with cs.SetTexture
+int length;
+
+float3 alphaBall;
+float gravity;
+float borderForceMagnitude;
+
+float2 xPosRange;
+float2 yPosRange;
+float2 zPosRange;
+
+
+RWStructuredBuffer<float3> resultBuff;
+RWStructuredBuffer<float3> accelerationBuff;
+RWStructuredBuffer<float3> velocityBuff;
+RWStructuredBuffer<float3> positionBuff;
+RWStructuredBuffer<float> massBuff;
+
+
+
+
+float3 calculateForces(uint id)
+{
+	float3 allForces = float3(0,0,0);
+	float dist;
+	float maxDist;
+	float3 minusPositions;
+
+
+	for (int i = 0; i < length; i++)
+	{
+		minusPositions = positionBuff[id.x] - positinBuff[i];
+		dist = dot(minusPositions, minusPositions);
+		maxDist = massBuff[id.x] * massBuff[id.x] + massBuff[i] * massBuff[i];
+
+			if (dist < maxDist && dist != 0)
+			{
+				allForces += minusPositions * (dist/maxDist);
+			}
+	}
+
+	if (positionBuff[id.x].x < xPosRange.x)
+		allForces.x += borderForceMagnitude;
+	else if (positionBuff[id.x].x > xPosRange.y)
+		allForces.x -= borderForceMagnitude;
+
+	if (positionBuff[id.x].y < yPosRange.x)
+		allForces.y += borderForceMagnitude;
+	else if (positionBuff[id.x].y > yPosRange.y)
+		allForces.y -= borderForceMagnitude;
+
+	if (positionBuff[id.x].z < zPosRange.x)
+		allForces.z += borderForceMagnitude;
+	else if (positionBuff[id.x].z > zPosRange.y)
+		allForces.z -= borderForceMagnitude;
+
+	return allForces;
+}
+
+[numthreads(1,1,1)]
+void CSMain (uint3 id : SV_DispatchThreadID)
+{
+	accelerationBuff[id.x] = float3(0, gravity, 0);
+	accelerationBuff[id.x] += calculateForces(id) / massBuff[id.x];
+	velocityBuff[id.x] += accelerationBuff[id.x];
+	resultBuff[id.x] = positionBuff[id.x] + velocityBuff[id.x];
+
+
+}
+
+
+
+

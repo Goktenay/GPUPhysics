@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/SampleScene.unity
-  isLoaded: 0
-  isActive: 0
+- path: Assets/GPUPhysics.unity
+  isLoaded: 1
+  isActive: 1

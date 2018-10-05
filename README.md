@@ -1,1 +1,1 @@
-GPUPhysics
+It's still buggy because i didn't use a guide text to implement physics system. Particles don't stop moving, tried so hard to solve this problem but couldn't. If you want to improve the project, just pm me.

@@ -1,0 +1,126 @@
+﻿// Each #kernel tells which function to compile; you can have many kernels
+// Each #kernel tells which function to compile; you can have many kernels
+#pragma kernel CSMain
+#pragma kernel setPositions
+
+// Create a RenderTexture with enableRandomWrite flag and set it
+// with cs.SetTexture
+int length; // Length of the balls.
+
+/*Note - If you were a smart person (not like me), you would create alphaBall as float4 and place 
+the mass of the alpha ball to the last index of alphaBall so it would be more efficient. */
+float3 alphaBall; // Alpha ball's position. 
+float alphaMass; // Mass of the alpha ball.
+
+float gravity; // Gravity, it only effects the y axis. I could do this as vector 3 so you could change gravity's direction but i didn't need to.
+float borderForceMagnitude; // Force that applies to the balls that are less or greater than the border positions.
+float friction; // Friction rate, it's still buggy for high values. 
+
+// Borders 
+float2 xPosRange;
+float2 yPosRange;
+float2 zPosRange;
+
+// Buffers
+RWStructuredBuffer<float3> resultBuff;
+RWStructuredBuffer<float3> accelerationBuff;
+RWStructuredBuffer<float3> velocityBuff;
+RWStructuredBuffer<float3> positionBuff;
+RWStructuredBuffer<float> massBuff;
+
+
+
+
+float3 calculateForces(uint id) // Does nearly the all force calculations.
+{
+	float3 allForces = float3(0,0,0);
+	float dist;
+	float maxDist;
+	float3 minusPositions;
+
+
+	for (int i = 0; i < length; i++) // Loop through all the balls
+	{
+		minusPositions = positionBuff[id.x] - positionBuff[i];  // Get the vector from other balls's position to this ball's position.
+		dist = dot(minusPositions, minusPositions); // calculate squared length of the distance vector
+		maxDist = (massBuff[id.x] * massBuff[id.x] + massBuff[i] * massBuff[i]) / 2; // Sum of two balls radius.
+
+			if (dist <= maxDist && dist != 0) // If we are colliding with eachother and we are not colliding with ourselves (Strange, right?)
+			{
+				allForces += normalize(minusPositions)/10; // Add force (The division number is arbitrary, the lower the number is the higher the force is.)
+			}
+	}
+
+
+	// For Alpha Ball force calculations. Same colliding force calculations.
+	minusPositions = positionBuff[id.x] - alphaBall;
+	dist = dot(minusPositions, minusPositions);
+	maxDist = (massBuff[id.x] * massBuff[id.x] + alphaMass * alphaMass) / 4;
+
+	if (dist <= maxDist && dist != 0)
+	{
+		allForces += normalize(minusPositions);
+	}
+
+
+	// If we are out of bounds, add force in the direction of the center.
+	if (positionBuff[id.x].x < xPosRange.x)
+		allForces.x += borderForceMagnitude;
+	else if (positionBuff[id.x].x > xPosRange.y)
+		allForces.x -= borderForceMagnitude;
+
+	if (positionBuff[id.x].z < zPosRange.x)
+		allForces.z += borderForceMagnitude;
+	else if (positionBuff[id.x].z > zPosRange.y)
+		allForces.z -= borderForceMagnitude;
+	
+	
+
+	return allForces;
+}
+
+[numthreads(1,1,1)]
+void CSMain (uint3 id : SV_DispatchThreadID)
+{
+	
+	accelerationBuff[id.x] = float3(0, gravity, 0); // We allways apply gravity
+	accelerationBuff[id.x] += calculateForces(id) / massBuff[id.x]; // calculate forces and dive it to mass to calculate acceleration (F = ma)
+	velocityBuff[id.x] += accelerationBuff[id.x]; // add acceleration to velocity 
+	
+
+
+		// Apply Friction by adding a portion of inverve velocity vector to velocity vector itself.
+		float3 frictionVec = -velocityBuff[id.x]; // Get inverse velocity vector.
+		frictionVec *= friction; // Apply friction rate
+		velocityBuff[id.x] += frictionVec; // apply the friction
+
+		
+	
+	
+		
+	float3 newPosition = positionBuff[id.x] + velocityBuff[id.x]; // Calculate possible new position
+
+	if (newPosition.y < yPosRange.x) // Check if we are below the y border, if yes recalculate new position
+	{ 
+		velocityBuff[id.x].y = abs(velocityBuff[id.x].y); // Get the absolute value y of velocity vector and change velocity vector's y with it.
+		newPosition = positionBuff[id.x] + velocityBuff[id.x]; // New position is now our new velocity vector + position vector.
+		newPosition.y = yPosRange.x; // Return position y to the ground value.
+	}
+
+	resultBuff[id.x] = newPosition; // Set result
+
+
+	/* Note - We must avoid to change positionBuffer in this function because
+	* we don't want to effect other balls force calculations.*/
+
+
+
+}
+
+[numthreads(1, 1, 1)]
+void setPositions(uint3 id : SV_DispatchThreadID)
+{
+	positionBuff[id.x] = resultBuff[id.x]; // Set position data to result data
+}
+
+

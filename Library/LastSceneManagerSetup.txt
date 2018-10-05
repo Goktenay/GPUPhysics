@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/GPUPhysics.unity
+- path: Assets/GPUPhysics/GPUPhysics.unity
   isLoaded: 1
   isActive: 1
